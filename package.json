@@ -1,7 +1,8 @@
 {
   "name": "ims-lti",
   "version": "3.0.2",
-  "description": "Module for building an LTI Tool Provider and accept LTI launch requests",
+  "description":
+    "Module for building an LTI Tool Provider and accept LTI launch requests",
   "author": {
     "name": "James Rundquist",
     "email": "james@courseshark.com"
@@ -17,11 +18,7 @@
     }
   ],
   "license": "MIT",
-  "keywords": [
-    "ims",
-    "lti",
-    "provider"
-  ],
+  "keywords": ["ims", "lti", "provider"],
   "repository": {
     "type": "git",
     "url": "https://github.com/omsmith/ims-lti.git"
@@ -29,9 +26,7 @@
   "bugs": {
     "url": "http://github.com/omsmith/ims-lti/issues"
   },
-  "files": [
-    "src/"
-  ],
+  "files": ["src/"],
   "main": "./src/ims-lti",
   "scripts": {
     "coverage": "nyc npm test",
@@ -78,42 +73,21 @@
       "xo/esnext",
       "prettier"
     ],
-    "plugins": [
-      "prettier",
-      "node"
-    ],
+    "plugins": ["prettier", "node"],
     "rules": {
-      "eqeqeq": [
-        "error",
-        "smart"
-      ],
-      "no-console": [
-        "warn"
-      ],
+      "eqeqeq": ["error", "smart"],
+      "no-console": ["warn"],
       "no-confusing-arrow": [
         "error",
         {
           "allowParens": true
         }
       ],
-      "no-eq-null": [
-        "off"
-      ],
-      "strict": [
-        "error",
-        "safe"
-      ],
-      "prettier/prettier": [
-        "error"
-      ],
-      "arrow-body-style": [
-        "error",
-        "as-needed"
-      ],
-      "newline-after-var": [
-        "error",
-        "always"
-      ],
+      "no-eq-null": ["off"],
+      "strict": ["error", "safe"],
+      "prettier/prettier": ["error"],
+      "arrow-body-style": ["error", "as-needed"],
+      "newline-after-var": ["error", "always"],
       "one-var": [
         "error",
         {
@@ -121,9 +95,7 @@
           "uninitialized": "always"
         }
       ],
-      "padded-blocks": [
-        "off"
-      ],
+      "padded-blocks": ["off"],
       "prefer-arrow-callback": [
         "error",
         {
@@ -134,9 +106,7 @@
         "error",
         "always",
         {
-          "markers": [
-            "/"
-          ]
+          "markers": ["/"]
         }
       ],
       "valid-jsdoc": [
@@ -147,35 +117,24 @@
           "requireReturn": false
         }
       ],
-      "camelcase": [
-        "off"
-      ],
-      "max-params": [
-        "off"
-      ]
+      "camelcase": ["off"],
+      "max-params": ["off"]
     },
     "overrides": [
       {
-        "files": [
-          "test/*.js"
-        ],
+        "files": ["test/*.js"],
         "env": {
           "node": true,
           "mocha": true
         },
         "rules": {
-          "prefer-arrow-callback": [
-            "off"
-          ]
+          "prefer-arrow-callback": ["off"]
         }
       }
     ]
   },
   "nyc": {
-    "reporter": [
-      "lcov",
-      "text"
-    ]
+    "reporter": ["lcov", "text"]
   },
   "prettier": {
     "singleQuote": true,
